@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Plugin.Maui.SwipeCardView;
 
 namespace MauiSwipeCardViewSample
 {
@@ -9,6 +10,7 @@ namespace MauiSwipeCardViewSample
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseSwipeCardView()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
